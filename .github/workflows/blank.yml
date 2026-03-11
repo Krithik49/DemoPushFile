@@ -36,6 +36,5 @@ jobs:
           password: ${{ secrets.DOCKERHUBPASSWORD }}
       - name: Build Docker image
         run: docker build -t krithikmaxi05/githubpushfile .
-
       - name: Push Docker image
         run: docker push krithikmaxi05/githubpushfile
